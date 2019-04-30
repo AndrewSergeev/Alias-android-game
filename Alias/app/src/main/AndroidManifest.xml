@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="il.co.freebie.alias">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher_custom"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".MainActivity" android:theme="@style/mainnotitle" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewGameActivity" android:theme="@style/withDarkMenu" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".ScoreManagerActivity" android:theme="@style/withDarkMenu" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".GameBoardActivity" android:theme="@style/withDarkMenu" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".RoundResultsActivity" android:theme="@style/withDarkMenu" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity android:name=".RulesActivity" android:theme="@style/withDarkMenu" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+</manifest>

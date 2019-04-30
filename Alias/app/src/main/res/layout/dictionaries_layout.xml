@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/group_btn_layout_shape"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_int_groups_selector"
+            android:text="@string/en"
+            android:id="@+id/en_btn"
+            android:textColor="@drawable/text_color_selector"/>
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@color/lightGray"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_int_groups_selector"
+            android:text="@string/he"
+            android:id="@+id/he_btn"
+            android:textColor="@drawable/text_color_selector"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/dictionaries_list"
+        />
+</LinearLayout>

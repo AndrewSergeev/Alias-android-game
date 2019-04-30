@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/settings_btn_shape"/>
+
+    <item android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <gradient
+                android:startColor="@color/textLabelColor"
+                android:endColor="@color/textLabelColor"
+                android:angle="90"/>
+            <stroke android:color="@color/textLabelColor"
+                android:width="3dp"/>
+        </shape>
+
+    </item>
+
+    <!--<item android:state_enabled="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners android:radius="4dp"/>
+            <gradient
+                android:startColor="@color/disabledGreen"
+                android:endColor="@color/disabledGreen"
+                android:angle="90"/>
+            <stroke android:color="@color/disabledGreen"
+                android:width="3dp"/>
+        </shape>
+    </item>-->
+
+
+</selector>

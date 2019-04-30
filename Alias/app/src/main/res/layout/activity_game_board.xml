@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/board_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/time_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="0"
+        android:min="0"
+        android:max="100"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_command_shape"
+        android:backgroundTint="@color/darkdark"
+        android:id="@+id/timer_service_tv"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/guessed_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guessed"
+        android:textColor="@color/textColorGray"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="185dp"/>
+
+    <ImageView
+        android:id="@+id/point_plus_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_drop_down_circle_black_24dp"
+        android:tint="@color/green"
+        android:layout_gravity="center"
+        android:layout_marginBottom="140dp"
+        android:scaleY="-1"
+        />
+
+    <TextView
+        android:id="@+id/positive_points_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/green"
+        android:text=""
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="140dp"
+        android:layout_marginRight="115dp"
+        />
+
+    <TextView
+        android:id="@+id/negative_points_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="115dp"
+        />
+
+    <ImageView
+        android:id="@+id/minus_point_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_drop_down_circle_black_24dp"
+        android:tint="@color/red"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        />
+
+    <TextView
+        android:id="@+id/pass_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass"
+        android:textColor="@color/textColorGray"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="185dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="@drawable/reversed_card_shape"
+        android:src="@drawable/mylogo"
+        android:tint="@color/pressedGreenDark"
+        android:padding="30dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="@drawable/reversed_card_shape"
+        android:src="@drawable/mylogo"
+        android:tint="@color/pressedGreenDark"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="@drawable/reversed_card_shape"
+        android:src="@drawable/mylogo"
+        android:tint="@color/pressedGreenDark"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="@drawable/reversed_card_shape"
+        android:src="@drawable/mylogo"
+        android:tint="@color/pressedGreenDark"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="6dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="@drawable/reversed_card_shape"
+        android:src="@drawable/mylogo"
+        android:tint="@color/pressedGreenDark"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:id="@+id/last_reversed_card_iv"
+        android:background="@drawable/reversed_card_shape"
+        android:src="@drawable/mylogo"
+        android:tint="@color/pressedGreenDark"
+        android:padding="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:id="@+id/main_card_tv"
+        android:text="word"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:background="@drawable/card_shape"
+        android:layout_marginBottom="8dp"
+        />
+
+
+
+</FrameLayout>

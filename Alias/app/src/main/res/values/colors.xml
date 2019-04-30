@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#5bc6bb</color>
+    <color name="colorAccent">#5bc6bb</color>
+    <color name="textLabelColor">#5bc6bb</color>
+    <color name="textColorGray">#939393</color>
+    <color name="lightGray">#d1d1d1</color>
+    <color name="materialGray">#F5F5F5</color>
+    <color name="pressedGreenDark">#4daba1</color>
+    <color name="disabledGreen">#91c4be</color>
+    <color name="darkdark">#1e8dc1</color>
+    <color name="darkblack">#000</color>
+    <color name="veryLightGray">#e7e6e6</color>
+    <color name="dirtyWhite">#f5f5f5</color>
+    <color name="lightblue">#e9e9e9</color>
+
+
+
+    <color name="green">#dc0cb300</color>
+    <color name="red">#dcff0004</color>
+    <color name="yellow">#eeff00</color>
+    <color name="black">#2d2d2d</color>
+    <color name="pink">#ff46c4</color>
+    <color name="orange">#ff6a00</color>
+    <color name="gold">#b79600</color>
+    <color name="gray">#b4b4b4</color>
+    <color name="blue">#002aff</color>
+    <color name="purple">#bc36ff</color>
+
+
+    <array name="color_array">
+        <item>@color/green</item>
+        <item>@color/red</item>
+        <item>@color/yellow</item>
+        <item>@color/black</item>
+        <item>@color/pink</item>
+        <item>@color/orange</item>
+        <item>@color/gold</item>
+        <item>@color/gray</item>
+        <item>@color/blue</item>
+        <item>@color/purple</item>
+
+    </array>
+
+    <color name="goldStar">#ffc800</color>
+    <color name="darkGoldStar">#ff7700</color>
+    <color name="seaStar">#fcff3d</color>
+</resources>

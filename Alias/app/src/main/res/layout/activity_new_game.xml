@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/dictionary"
+            android:textColor="@color/textLabelColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_font_download_black_24dp"
+                android:tint="@color/textLabelColor" />
+
+            <Button
+                android:id="@+id/select_dictionary_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/material_btn_selector"
+                android:drawableEnd="@drawable/chevronicon"
+                android:gravity="left|center_vertical"
+                android:text="@string/select_dictionary"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorGray"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/lightGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/game_teams"
+            android:textColor="@color/textLabelColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/command_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/add_team_btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/material_btn_selector"
+            android:paddingStart="5dp"
+            android:drawableStart="@drawable/ic_add_circle_outline_black_24dp"
+            android:text="@string/add_team"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/lightGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/settings"
+            android:textColor="@color/textLabelColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_timer_black_24dp"
+                android:tint="@color/textLabelColor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/round_time"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/round_time_explanation"
+                    android:textColor="@color/textColorGray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/seconds_for_round_tv"
+                    android:gravity="end"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="60"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="5dp"
+                    android:text="@string/seconds"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/less_time_btn"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/settings_btn_selector"
+                android:text="- 30"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/more_time_btn"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="13dp"
+                android:background="@drawable/settings_btn_selector"
+                android:text="+ 30"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="75dp"
+            android:background="@color/lightGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_content_copy_black_24dp"
+                android:tint="@color/textLabelColor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/words_amount"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/for_victory"
+                    android:textColor="@color/textColorGray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/words_amount_tv"
+                    android:gravity="end"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/less_words_btn"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/settings_btn_selector"
+                android:text="- 10"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/more_words_btn"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="13dp"
+                android:background="@drawable/settings_btn_selector"
+                android:text="+ 10"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/lightGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/game_mode"
+            android:textColor="@color/textLabelColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_alarm_on_black_24dp"
+                android:tint="@color/textLabelColor" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_word"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_word_explanation"
+                    android:textColor="@color/textColorGray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/last_word_all_cb"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

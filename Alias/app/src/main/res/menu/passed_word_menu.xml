@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/from_passed_to_guessed"
+        android:title="@string/to_guessed"
+        />
+
+    <item
+        android:id="@+id/from_passed_to_unread"
+        android:title="@string/to_unread"/>
+</menu>

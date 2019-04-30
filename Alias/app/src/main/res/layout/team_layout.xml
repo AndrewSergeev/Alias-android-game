@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle_command_shape"
+        android:id="@+id/team_color_tv"
+        android:layout_gravity="start"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/team_name_tv"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="55dp"
+        android:text="Team name"
+        android:textSize="20sp"
+        android:textColor="@color/textColorGray"/>
+
+
+</android.support.v7.widget.CardView>
